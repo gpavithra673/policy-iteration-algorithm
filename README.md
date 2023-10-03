@@ -61,6 +61,7 @@ def policy_improvement(V, P, gamma=1.0):
 
 
 ## POLICY ITERATION FUNCTION
+```
 python
 def policy_iteration(P, gamma=1.0,theta=1e-10):
   random_actions=np.random.choice(tuple(P[0].keys()),len(P))
@@ -72,7 +73,7 @@ def policy_iteration(P, gamma=1.0,theta=1e-10):
     if old_pi == {s:pi(s) for s in range(len(P))}:
       break
   return V,pi
-
+```
 ## OUTPUT:
 
 
